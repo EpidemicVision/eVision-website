@@ -1,35 +1,68 @@
 import {
     Button,
-    Center,
-    Container,
+    Flex,
     Heading,
+    Image,
+    Stack,
     Text,
-    VStack,
-} from "@chakra-ui/react";
+    useBreakpointValue,
+} from '@chakra-ui/react';
 import { FunctionComponent } from "react";
 
 interface HeroSectionProps { }
 
 export const HeroSection: FunctionComponent<HeroSectionProps> = () => {
     return (
-        <Container maxW="container.lg">
-            <Center p={4} minHeight="70vh">
-                <VStack>
-                    <Container maxW="container.md" textAlign="center">
-                        <Heading size="2xl" mb={4} color="gray.700">
+        <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
+            <Flex p={8} flex={1} align={'center'} justify={'center'}>
+                <Stack spacing={6} w={'full'} maxW={'lg'}>
+                    <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
+                        <Text
+                            as={'span'}
+                            position={'relative'}
+                            _after={{
+                                content: "''",
+                                width: 'full',
+                                height: useBreakpointValue({ base: '20%', md: '30%' }),
+                                position: 'absolute',
+                                bottom: 1,
+                                left: 0,
+                                bg: 'blue.400',
+                                zIndex: -1,
+                            }}>
                             eVision
-                        </Heading>
-
-                        <Text fontSize="xl" color="gray.500">
-                            An Influenza Forecasting tool from the Healthcare and innovation Lab
                         </Text>
-
-                        <Text my={2} fontSize="sm" color="gray.500">
-                            102+ builders have signed up in the last 30 days
-                        </Text>
-                    </Container>
-                </VStack>
-            </Center>
-        </Container>
+                        <br />{' '}
+                        <Text color={'blue.400'} as={'span'}>
+                            Influenza Forecsting
+                        </Text>{' '}
+                    </Heading>
+                    <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
+                        Uses Long Short-Term Memory (LSTM) neural network data science techniques to predict future influenza vectors.
+                    </Text>
+                    <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
+                        <Button
+                            rounded={'full'}
+                            bg={'blue.400'}
+                            color={'white'}
+                            _hover={{
+                                bg: 'blue.500',
+                            }}>
+                            See Project
+                        </Button>
+                        <Button rounded={'full'}>How It Works</Button>
+                    </Stack>
+                </Stack>
+            </Flex>
+            <Flex flex={1}>
+                <Image
+                    alt={'Login Image'}
+                    objectFit={'contain'}
+                    src={
+                        'https://images.unsplash.com/photo-1545987796-200677ee1011?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80'
+                    }
+                />
+            </Flex>
+        </Stack>
     );
 };
