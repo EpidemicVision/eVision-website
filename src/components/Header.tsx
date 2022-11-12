@@ -24,7 +24,7 @@ import {
 const navLinks = [
     { name: 'Home', link: '/' },
     { name: 'Features', link: '#features' },
-    { name: 'Tool', link: '#pricing' },
+    { name: 'TeamMembers', link: '#teammembers' },
 ]
 
 const DesktopSidebarContents = ({ name }: any) => {

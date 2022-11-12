@@ -6,6 +6,7 @@ import {
     Stack,
     Text,
     useBreakpointValue,
+    Highlight
 } from '@chakra-ui/react';
 import { FunctionComponent } from "react";
 
@@ -13,13 +14,14 @@ interface HeroSectionProps { }
 
 export const HeroSection: FunctionComponent<HeroSectionProps> = () => {
     return (
-        <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
+        <Stack minH={'75vh'} direction={{ base: 'column', md: 'row' }}>
             <Flex p={8} flex={1} align={'center'} justify={'center'}>
                 <Stack spacing={6} w={'full'} maxW={'lg'}>
                     <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
                         <Text
                             as={'span'}
                             position={'relative'}
+                            zIndex={0}
                             _after={{
                                 content: "''",
                                 width: 'full',
@@ -53,7 +55,7 @@ export const HeroSection: FunctionComponent<HeroSectionProps> = () => {
                         <Button rounded={'full'}>How It Works</Button>
                     </Stack>
                 </Stack>
-            </Flex>
+            </Flex >
             <Flex flex={1}>
                 <Image
                     alt={'Login Image'}
@@ -63,6 +65,6 @@ export const HeroSection: FunctionComponent<HeroSectionProps> = () => {
                     }
                 />
             </Flex>
-        </Stack>
+        </Stack >
     );
 };
