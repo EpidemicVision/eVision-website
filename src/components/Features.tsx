@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-import { Box, SimpleGrid, Icon, Text, Stack, Flex, Heading, Container } from '@chakra-ui/react';
+import { Box, SimpleGrid, Icon, Text, Stack, Flex, Heading, Container, useColorModeValue, chakra, Center } from '@chakra-ui/react';
 import { FcCommandLine, FcBullish, FcElectronics } from 'react-icons/fc';
 import { FunctionComponent } from "react";
 interface FeatureProps {
@@ -31,7 +31,15 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
 export const Features: FunctionComponent = () => {
     return (
         <Box p={5}>
-            <Heading textAlign={'center'}>Features</Heading>
+            <Center>
+                <chakra.h1
+                    py={5}
+                    fontSize={48}
+                    fontWeight={'bold'}
+                    color={useColorModeValue('gray.700', 'gray.50')}>
+                    Features
+                </chakra.h1>
+            </Center>
             <Container maxW={'7xl'} mt={10}>
                 <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
                     <Feature

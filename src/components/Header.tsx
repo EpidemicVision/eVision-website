@@ -24,7 +24,7 @@ import {
 const navLinks = [
     { name: 'Home', link: '/' },
     { name: 'Features', link: '#features' },
-    { name: 'TeamMembers', link: '#teammembers' },
+    { name: 'Team Members', link: '#teammembers' },
 ]
 
 const DesktopSidebarContents = ({ name }: any) => {
@@ -60,7 +60,7 @@ const DesktopSidebarContents = ({ name }: any) => {
                 </Stack>
                 <Spacer />
                 <LinkBox>
-                    <LinkOverlay href={`https://github.com/husainunwalla`} isExternal>
+                    <LinkOverlay href={`https://www.scu.edu/`} isExternal>
                         <Image
                             boxSize={["40px", "50px"]}
                             src="https://www.scu.edu/media/offices/umc/scu-brand-guidelines/visual-identity-amp-photography/visual-identity-toolkit/logos-amp-seals/Mission-Black.png"></Image>
