@@ -14,7 +14,7 @@ interface HeroSectionProps { }
 
 export const HeroSection: FunctionComponent<HeroSectionProps> = () => {
     return (
-        <Stack minH={'75vh'} direction={{ base: 'column', md: 'row' }}>
+        <Stack direction={{ base: 'column', md: 'row' }} position={'relative'}>
             <Flex p={8} flex={1} align={'center'} justify={'center'}>
                 <Stack spacing={6} w={'full'} maxW={'lg'}>
                     <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>

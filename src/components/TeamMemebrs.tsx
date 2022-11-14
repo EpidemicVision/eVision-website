@@ -138,7 +138,6 @@ export const TeamMembers: FunctionComponent = () => {
     return (
         <Flex
             textAlign={'center'}
-            pt={200}
             justifyContent={'center'}
             direction={'column'}
             width={'full'}>

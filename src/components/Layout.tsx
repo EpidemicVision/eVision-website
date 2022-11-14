@@ -11,7 +11,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({
 }: LayoutProps) => {
     return (
         <Box bg="gray.50">
-            <VStack spacing={10} w="full" align="center">
+            <VStack spacing={200} w="full" align="center">
                 <Header name="eVision" />
                 {children}
             </VStack>

@@ -30,7 +30,7 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
 
 export const Features: FunctionComponent = () => {
     return (
-        <Box p={5}>
+        <Box position={'relative'}>
             <Center>
                 <chakra.h1
                     py={5}

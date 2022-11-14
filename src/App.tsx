@@ -10,20 +10,20 @@ export const App = () => {
   return (
     <Layout>
       <Box bg="gray.50">
-
         <HeroSection />
+      </Box>
 
-        <div id="features">
-          <Features />
-        </div>
-        <div id='teammembers'>
-          <TeamMembers />
-        </div>
+      <Box id="features">
+        <Features />
+      </Box>
+
+      <Publications />
+
+      <Box id='teammembers'>
+        <TeamMembers />
       </Box>
 
       <Footer />
-
-
     </Layout >
   );
 };
