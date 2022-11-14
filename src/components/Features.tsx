@@ -46,21 +46,21 @@ export const Features: FunctionComponent = () => {
                         icon={<Icon as={FcCommandLine} w={10} h={10} />}
                         title={'MACHINE LEARNING'}
                         text={
-                            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+                            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.'
                         }
                     />
                     <Feature
                         icon={<Icon as={FcElectronics} w={10} h={10} />}
                         title={'ARTIFICIAL INTELLIGENCE'}
                         text={
-                            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+                            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.'
                         }
                     />
                     <Feature
                         icon={<Icon as={FcBullish} w={10} h={10} />}
                         title={'DATA SCIENCE'}
                         text={
-                            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+                            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.'
                         }
                     />
                 </SimpleGrid>

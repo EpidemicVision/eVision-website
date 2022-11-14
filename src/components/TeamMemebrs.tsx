@@ -73,7 +73,6 @@ function TestimonialCard(props: TestimonialCardProps) {
             p={10}
             justifyContent={'space-between'}
             position={'relative'}
-
             bg={useColorModeValue('white', 'gray.800')}
             _before={{
                 content: '""',
@@ -99,7 +98,8 @@ function TestimonialCard(props: TestimonialCardProps) {
                 top: 0,
                 left: 0,
                 backgroundImage: backgrounds[index % 4],
-            }}>
+            }}
+        >
             <Flex
                 position={'relative'}
                 direction={'column'}
