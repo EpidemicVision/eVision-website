@@ -3,13 +3,21 @@ import {
     Box,
     IconButton,
     useBreakpointValue,
-    Card
+    Container,
+    Heading,
+    Text,
+    Stack,
+    useColorModeValue,
+    Img,
+    Flex,
+    HStack,
 } from '@chakra-ui/react';
 // Here we have used react-icons package for the icons
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 // And react-slick as our Carousel Lib
 import Slider from 'react-slick';
 import { FunctionComponent } from 'react';
+import { BsArrowUpRight, BsHeartFill, BsHeart } from 'react-icons/bs';
 
 // Settings for the slider
 const settings = {
@@ -20,8 +28,9 @@ const settings = {
     autoplay: true,
     speed: 500,
     autoplaySpeed: 5000,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
+    slidesPerRow: 3,
 };
 
 export const Publications: FunctionComponent = () => {
@@ -57,6 +66,27 @@ export const Publications: FunctionComponent = () => {
                 "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
             image:
                 'https://images.unsplash.com/photo-1507237998874-b4d52d1dd655?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
+        },
+        {
+            title: 'Research Paper 4',
+            text:
+                "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
+            image:
+                ''
+        },
+        {
+            title: 'Research Paper 5',
+            text:
+                "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
+            image:
+                ''
+        },
+        {
+            title: 'Research Paper 6',
+            text:
+                "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
+            image:
+                ''
         },
     ];
 
@@ -106,9 +136,85 @@ export const Publications: FunctionComponent = () => {
             {/* Slider */}
             <Slider {...settings} ref={(slider) => setSlider(slider)}>
                 {cards.map((card, index) => (
-                    <Box></Box>
-                ))}
-            </Slider>
-        </Box>
+                    <Box
+                        key={index}
+                        position="relative"
+                        backgroundPosition="center">
+                        <Container size="container.lg" height="600px" position="relative">
+                            {<Stack
+                                spacing={6}
+                                w={'full'}
+                                maxW={'lg'}
+                                position="absolute"
+                                top="50%"
+                                transform="translate(0, -50%)">
+                                <Box
+                                    w="xs"
+                                    rounded={'sm'}
+                                    my={5}
+                                    mx={[0, 5]}
+                                    overflow={'hidden'}
+                                    bg="white">
+                                    <Box h={'200px'} >
+                                        <Img
+                                            src={
+                                                card.image
+                                            }
+                                            roundedTop={'sm'}
+                                            objectFit="cover"
+                                            h="full"
+                                            w="full"
+                                            alt={'Image'}
+                                        />
+                                    </Box>
+                                    <Box p={4}>
+                                        <Box
+                                            bg="blue.500"
+                                            display={'inline-block'}
+                                            px={2}
+                                            py={1}
+                                            color="white"
+                                            mb={2}>
+                                            <Text fontSize={'xs'} fontWeight="medium">
+                                                Published
+                                            </Text>
+                                        </Box>
+                                        <Heading color={'black'} fontSize={'2xl'} noOfLines={1}>
+                                            {card.title}
+                                        </Heading>
+                                        <Text color={'gray.500'} noOfLines={2}>
+                                            In this paper......
+                                        </Text>
+                                    </Box>
+                                    <HStack background={'blue.400'} color={'white'}>
+                                        <Flex
+                                            p={4}
+                                            alignItems="center"
+                                            justifyContent={'space-between'}
+                                            roundedBottom={'sm'}
+                                            cursor={'pointer'}
+                                            w="full">
+                                            <Text fontSize={'md'} fontWeight={'semibold'}>
+                                                View more
+                                            </Text>
+                                            <BsArrowUpRight />
+                                        </Flex>
+                                        <Flex
+                                            p={4}
+                                            alignItems="center"
+                                            justifyContent={'space-between'}
+                                            roundedBottom={'sm'}
+                                            borderLeft={'1px'}
+                                            cursor="pointer">
+                                        </Flex>
+                                    </HStack>
+                                </Box>
+                            </Stack>}
+                        </Container>
+                    </Box>
+                ))
+                }
+            </Slider >
+        </Box >
     );
 }
