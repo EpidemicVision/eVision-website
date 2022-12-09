@@ -12,36 +12,36 @@ import { FunctionComponent } from "react";
 
 const testimonials = [
     {
-        name: 'Brandon P.',
-        role: 'Student',
+        name: 'George Kouretas',
+        role: 'BS Bioengineering',
         content:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+            'Currently part of eVision research team. Interested in medical devices, software development, and all things found on the intersection of healthcare and innovation.',
         avatar:
-            'https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80'
+            'src/assets/George Kouretas.jpeg'
     },
     {
-        name: 'Krysta B.',
-        role: 'Student',
+        name: 'Andres Calle',
+        role: 'MS Computer Science and Engineering',
         content:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+            'I first entered SCU as a transfer student, switching my major from Biology to Computer Science. After first meeting Professor Shaghaghi in my second quarter at SCU, I would go on to work as a research assistant for him over the summer on various projects. I was brought on to the EPIC Lab due to my interest in Machine Learning, and together with a few of my peers, we began to develop computer vision software, flood monitoring systems, and flu prediction AI. Since that summer, I have completed my undergraduate degree in SCU and have moved on to pursuing my masters, working as a Research Assistant to the Bioinnovation Lab and still working very closely with the EPIC Lab.',
         avatar:
-            'https://images.unsplash.com/photo-1598550874175-4d0ef436c909?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
+            'src/assets/Michael Castillo - Michael Castillo.PNG',
     },
     {
-        name: 'Darcy L.',
-        role: 'Student',
+        name: 'Michael Castillo.',
+        role: 'BS Computer Science and Engineering',
         content:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+            'Michael Castillo grew up in South Florida and moved to Los Angeles at the beginning of his high school education at Granada Hills Charter. On his academic journey there, he would gain an AP Scholar with Distinction and a National AP Scholar award, as well as the AP Capstone Diploma for research on links between enjoyment of horror movies and emotional intelligence. Among other things, Michael hopes to advance his understanding and involvement in various facets of the CS field while at SCU, and looks forwards to where the path of research leads.',
         avatar:
-            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80',
+            'src/assets/Michael Castillo - Michael Castillo.PNG',
     },
     {
-        name: 'Daniel T.',
-        role: 'Student',
+        name: '	Nancy Ma',
+        role: 'BS Mathematics and Computer Science',
         content:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+            'I\'m an undergraduate student at Santa Clara University. I\'m double majoring in Computer Science and Mathematics, and I\'m currently working on eVision project.',
         avatar:
-            'https://images.unsplash.com/photo-1606513542745-97629752a13b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
+            'src/assets/Profile Pic - Nancy Ma.jpeg',
     },
 ];
 
