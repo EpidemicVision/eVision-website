@@ -20,6 +20,14 @@ const testimonials = [
             'src/assets/George Kouretas.jpeg'
     },
     {
+        name: '	Nancy Ma',
+        role: 'BS Mathematics and Computer Science',
+        content:
+            'I\'m an undergraduate student at Santa Clara University. I\'m double majoring in Computer Science and Mathematics, and I\'m currently working on eVision project.',
+        avatar:
+            'src/assets/Profile Pic - Nancy Ma.jpeg',
+    },
+    {
         name: 'Andres Calle',
         role: 'MS Computer Science and Engineering',
         content:
@@ -34,14 +42,6 @@ const testimonials = [
             'Michael Castillo grew up in South Florida and moved to Los Angeles at the beginning of his high school education at Granada Hills Charter. On his academic journey there, he would gain an AP Scholar with Distinction and a National AP Scholar award, as well as the AP Capstone Diploma for research on links between enjoyment of horror movies and emotional intelligence. Among other things, Michael hopes to advance his understanding and involvement in various facets of the CS field while at SCU, and looks forwards to where the path of research leads.',
         avatar:
             'src/assets/Michael Castillo - Michael Castillo.PNG',
-    },
-    {
-        name: '	Nancy Ma',
-        role: 'BS Mathematics and Computer Science',
-        content:
-            'I\'m an undergraduate student at Santa Clara University. I\'m double majoring in Computer Science and Mathematics, and I\'m currently working on eVision project.',
-        avatar:
-            'src/assets/Profile Pic - Nancy Ma.jpeg',
     },
 ];
 
@@ -106,7 +106,6 @@ function TestimonialCard(props: TestimonialCardProps) {
                 textAlign={'left'}
                 justifyContent={'space-between'}>
                 <chakra.p
-                    fontFamily={'Inter'}
                     fontWeight={'medium'}
                     fontSize={'15px'}
                     pb={4}>
