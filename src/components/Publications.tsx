@@ -230,7 +230,7 @@ export const Publications: FunctionComponent = () => {
                                             Authors: {card.authors}
                                         </Heading>
                                         <br></br>
-                                        <Text color={'gray.500'} noOfLines={5}>
+                                        <Text color={'gray.500'} noOfLines={3}>
                                             {card.text}
                                         </Text>
                                     </Box>

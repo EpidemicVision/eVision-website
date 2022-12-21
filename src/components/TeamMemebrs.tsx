@@ -9,7 +9,10 @@ import {
     useColorModeValue,
 } from '@chakra-ui/react';
 import { FunctionComponent } from "react";
-
+import George from '../assets/george-kouretas.jpeg';
+import Nancy from '../assets/nancy-ma.jpeg';
+import Andres from '../ASSETS/andres-calle.jpg';
+import Michael from '../assets/michael-castillo.png';
 const testimonials = [
     {
         name: 'George Kouretas',
@@ -17,7 +20,7 @@ const testimonials = [
         content:
             'Currently part of eVision research team. Interested in medical devices, software development, and all things found on the intersection of healthcare and innovation.',
         avatar:
-            'src/assets/George Kouretas.jpeg'
+            George
     },
     {
         name: '	Nancy Ma',
@@ -25,7 +28,7 @@ const testimonials = [
         content:
             'I\'m an undergraduate student at Santa Clara University. I\'m double majoring in Computer Science and Mathematics, and I\'m currently working on eVision project.',
         avatar:
-            'src/assets/Profile Pic - Nancy Ma.jpeg',
+            Nancy
     },
     {
         name: 'Andres Calle',
@@ -33,7 +36,7 @@ const testimonials = [
         content:
             'I first entered SCU as a transfer student, switching my major from Biology to Computer Science. After first meeting Professor Shaghaghi in my second quarter at SCU, I would go on to work as a research assistant for him over the summer on various projects. I was brought on to the EPIC Lab due to my interest in Machine Learning, and together with a few of my peers, we began to develop computer vision software, flood monitoring systems, and flu prediction AI. Since that summer, I have completed my undergraduate degree in SCU and have moved on to pursuing my masters, working as a Research Assistant to the Bioinnovation Lab and still working very closely with the EPIC Lab.',
         avatar:
-            'src/assets/Michael Castillo - Michael Castillo.PNG',
+            Andres
     },
     {
         name: 'Michael Castillo.',
@@ -41,7 +44,7 @@ const testimonials = [
         content:
             'Michael Castillo grew up in South Florida and moved to Los Angeles at the beginning of his high school education at Granada Hills Charter. On his academic journey there, he would gain an AP Scholar with Distinction and a National AP Scholar award, as well as the AP Capstone Diploma for research on links between enjoyment of horror movies and emotional intelligence. Among other things, Michael hopes to advance his understanding and involvement in various facets of the CS field while at SCU, and looks forwards to where the path of research leads.',
         avatar:
-            'src/assets/Michael Castillo - Michael Castillo.PNG',
+            Michael
     },
 ];
 

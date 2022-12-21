@@ -36,7 +36,7 @@ export const HeroSection: FunctionComponent<HeroSectionProps> = () => {
                         </Text>
                         <br />{' '}
                         <Text color={'blue.400'} as={'span'}>
-                            Influenza Forecsting
+                            Influenza Forecasting
                         </Text>{' '}
                     </Heading>
                     <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
