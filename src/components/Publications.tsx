@@ -33,8 +33,9 @@ var settings = {
     autoplaySpeed: 5000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    slidesPerRow: 1,
+    slidesPerRow: 2,
 };
+
 
 export const Publications: FunctionComponent = () => {
     // As we have used custom buttons, we need a reference variable to
@@ -57,6 +58,11 @@ export const Publications: FunctionComponent = () => {
             window.removeEventListener('resize', handleWindowSizeChange);
         }
     }, []);
+
+    //Slides per row for mobile
+    if (width < 1300) {
+        settings.slidesPerRow = 1;
+    }
 
     // This list contains all the data for carousels
     // This can be static or loaded from a server
@@ -180,7 +186,7 @@ export const Publications: FunctionComponent = () => {
                                 transform="translate(0, -50%)"
                                 align={'center'}>
                                 <Box
-                                    w="2xl"
+                                    w="lg"
                                     rounded={'sm'}
                                     my={5}
                                     mx={[0, 5]}
@@ -217,7 +223,7 @@ export const Publications: FunctionComponent = () => {
                                             Authors: {card.authors}
                                         </Heading>
                                         <br></br>
-                                        <Text color={'gray.500'} noOfLines={3}>
+                                        <Text color={'gray.500'} noOfLines={5}>
                                             {card.text}
                                         </Text>
                                     </Box>
