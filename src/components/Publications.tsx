@@ -33,7 +33,7 @@ var settings = {
     autoplaySpeed: 5000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    slidesPerRow: 3,
+    slidesPerRow: 1,
 };
 
 export const Publications: FunctionComponent = () => {
@@ -57,19 +57,6 @@ export const Publications: FunctionComponent = () => {
             window.removeEventListener('resize', handleWindowSizeChange);
         }
     }, []);
-
-    if (width < 768) {
-        settings.slidesPerRow = 1;
-    }
-    else if (width < 1024) {
-        settings.slidesPerRow = 1;
-    }
-    else if (width < 1440) {
-        settings.slidesPerRow = 2;
-    }
-    else {
-        settings.slidesPerRow = 2;
-    }
 
     // This list contains all the data for carousels
     // This can be static or loaded from a server
@@ -183,7 +170,7 @@ export const Publications: FunctionComponent = () => {
                         key={index}
                         position="relative"
                         backgroundPosition="center">
-                        <Container size="container.lg" height="600px" position="relative">
+                        <Container size="container.lg" height="400px" position="relative">
                             {<Stack
                                 spacing={6}
                                 w={'full'}
