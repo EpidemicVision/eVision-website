@@ -7,13 +7,29 @@ import {
     Icon,
     SimpleGrid,
     useColorModeValue,
+    List,
+    ListItem,
+    ListIcon,
+    OrderedList,
+    UnorderedList,
+    Center,
 } from '@chakra-ui/react';
 import { FunctionComponent } from "react";
 import George from '../assets/george-kouretas.jpeg';
 import Nancy from '../assets/nancy-ma.jpeg';
 import Andres from '../ASSETS/andres-calle.jpg';
 import Michael from '../assets/michael-castillo.png';
+import Navid from '../assets/Navid-Shaghaghi.jpg'
+import Husain from '../assets/Husain.jpeg'
 const testimonials = [
+    {
+        name: 'Navid Shaghaghi',
+        role: 'Professor, department of Mathematics and Computer Science',
+        content:
+            'Navid Shaghaghi is a lecturer and researcher in the department of Mathematics and Computer Science (MCS) of the College of Arts and Sciences and the departments of Computer Science & Engineering (CSEN) and Bioenginneering (BIOE) of the School of Engineering. He also teaches a couple of courses in the department of Information Systems and Analytics (ISA) of the School of Business at Santa Clara University. ',
+        avatar:
+            Navid
+    },
     {
         name: 'George Kouretas',
         role: 'BS Bioengineering',
@@ -46,7 +62,17 @@ const testimonials = [
         avatar:
             Michael
     },
+    {
+        name: 'Husain Unwalla',
+        role: 'MS Computer Engineering',
+        content:
+            'I am a First-year Master\'s student majoring in Computer Engineering. I am interested in software development which led me to join this project. I built this website!',
+        avatar:
+            Husain
+    },
 ];
+
+const pastMembers = ['Meghan McGinnis (B.A. 2019 - M.S. 2020)', 'Yuhang Qian (B.A. 2019)', 'Anika Shahi (B.A. 2020)', 'Liying Liang (B.S. 2021)', 'Tanmay Wagh (M.S. 2021)', 'Ron Huang', 'Yash Kamdar (M.S. 2021)', 'Yoga Ramachandran', 'Bhupinder Jagwani', 'Namratha Kamath', 'Supriya Karishetti (M.S. 2021)', 'Jaidev Mirchandani (M.S. 2022)'];
 
 const backgrounds = [
     `url("data:image/svg+xml, %3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'560\' height=\'185\' viewBox=\'0 0 560 185\' fill=\'none\'%3E%3Cellipse cx=\'102.633\' cy=\'61.0737\' rx=\'102.633\' ry=\'61.0737\' fill=\'%23ED64A6\' /%3E%3Cellipse cx=\'399.573\' cy=\'123.926\' rx=\'102.633\' ry=\'61.0737\' fill=\'%23F56565\' /%3E%3Cellipse cx=\'366.192\' cy=\'73.2292\' rx=\'193.808\' ry=\'73.2292\' fill=\'%2338B2AC\' /%3E%3Cellipse cx=\'222.705\' cy=\'110.585\' rx=\'193.808\' ry=\'73.2292\' fill=\'%23ED8936\' /%3E%3C/svg%3E")`,
@@ -114,7 +140,7 @@ function TestimonialCard(props: TestimonialCardProps) {
                     pb={4}>
                     {content}
                 </chakra.p>
-                <chakra.p fontFamily={'Work Sans'} fontWeight={'bold'} fontSize={14}>
+                <chakra.p fontWeight={'bold'} fontSize={14}>
                     {name}
                     <chakra.span
                         fontFamily={'Inter'}
@@ -163,6 +189,28 @@ export const TeamMembers: FunctionComponent = () => {
                     <TestimonialCard {...cardInfo} index={index} />
                 ))}
             </SimpleGrid>
+            <Box width={{ base: 'full', sm: 'lg', lg: 'xl' }} margin={'auto'}>
+                <chakra.h1
+                    py={20}
+                    fontSize={48}
+                    fontWeight={'bold'}
+                    color={useColorModeValue('gray.700', 'gray.50')}>
+                    Past Members
+                </chakra.h1>
+            </Box>
+            <List>
+                {pastMembers.map((member) => (
+                    <ListItem>
+                        <chakra.p
+                            fontWeight={'medium'}
+                            fontSize={'15px'}
+                            pb={4}>
+                            {member}
+                        </chakra.p>
+                    </ListItem>
+                ))}
+            </List>
+
         </Flex>
     );
 }

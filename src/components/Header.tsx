@@ -23,7 +23,7 @@ import {
 
 const navLinks = [
     { name: 'Home', link: '/' },
-    { name: 'Features', link: '#features' },
+    // { name: 'Features', link: '#features' },
     { name: 'Papers', link: '#publications' },
     { name: 'Team', link: '#teammembers' },
 ]
@@ -60,13 +60,13 @@ const DesktopSidebarContents = ({ name }: any) => {
                     })}
                 </Stack>
                 <Spacer />
-                <LinkBox>
+                {/* <LinkBox>
                     <LinkOverlay href={`https://www.scu.edu/`} isExternal>
                         <Image
                             boxSize={["40px", "50px"]}
-                            src="https://www.scu.edu/media/offices/umc/scu-brand-guidelines/visual-identity-amp-photography/visual-identity-toolkit/logos-amp-seals/Mission-Black.png"></Image>
+                            src=""></Image>
                     </LinkOverlay>
-                </LinkBox>
+                </LinkBox> */}
             </Stack>
         </Container >
     )

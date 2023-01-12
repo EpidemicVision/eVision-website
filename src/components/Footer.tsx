@@ -7,7 +7,6 @@ import {
     useColorModeValue,
     VisuallyHidden,
 } from '@chakra-ui/react';
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { ReactNode, FunctionComponent } from 'react';
 
 const SocialButton = ({
@@ -54,18 +53,7 @@ export const Footer: FunctionComponent = () => {
                 spacing={4}
                 justify={{ base: 'center', md: 'space-between' }}
                 align={{ base: 'center', md: 'center' }}>
-                <Text>© 2022 Epidemic Vision. All rights Reserved</Text>
-                <Stack direction={'row'} spacing={6}>
-                    <SocialButton label={'Twitter'} href={'#'}>
-                        <FaTwitter />
-                    </SocialButton>
-                    <SocialButton label={'YouTube'} href={'#'}>
-                        <FaYoutube />
-                    </SocialButton>
-                    <SocialButton label={'Instagram'} href={'#'}>
-                        <FaInstagram />
-                    </SocialButton>
-                </Stack>
+                <Text>© 2023 Epidemic Vision. All rights Reserved.</Text>
             </Container>
         </Box>
     );

@@ -92,9 +92,9 @@ export const Publications: FunctionComponent = () => {
             authors: 'Navid Shaghaghi, Andres Calle, George Kouretas'
         },
         {
-            title: 'Expanding eVision’s Granularity of Influenza Forecasting',
+            title: 'Expanding eVision\'s Granularity of Influenza Forecasting',
             text:
-                "According to the United States’ Center for Disease Control and Prevention (CDC) between 39 and 56 million people in the US suffered from Influenza Like Illnesses (ILI) in the 2019-20 flue season. From which, 410 to 740 thousand were hospitalized and 24 to 62 thousand succumbed to the disease. Therefore, the existence of an early warning mechanism that can alert pharmaceuticals, healthcare providers, and governments to the trends of the influenza season well in advance, would serve as a significant step in helping combat this communicable disease and reduce mortality from it.",
+                "According to the United States\' Center for Disease Control and Prevention (CDC) between 39 and 56 million people in the US suffered from Influenza Like Illnesses (ILI) in the 2019-20 flue season. From which, 410 to 740 thousand were hospitalized and 24 to 62 thousand succumbed to the disease. Therefore, the existence of an early warning mechanism that can alert pharmaceuticals, healthcare providers, and governments to the trends of the influenza season well in advance, would serve as a significant step in helping combat this communicable disease and reduce mortality from it.",
             link:
                 'https://link.springer.com/chapter/10.1007/978-3-030-70569-5_14',
             authors: 'Navid Shaghaghi, Andres Calle, George Kouretas, Supriya Karishetti & Tanmay Wagh'

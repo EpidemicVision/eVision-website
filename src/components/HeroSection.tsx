@@ -36,14 +36,15 @@ export const HeroSection: FunctionComponent<HeroSectionProps> = () => {
                         </Text>
                         <br />{' '}
                         <Text color={'blue.400'} as={'span'}>
-                            Influenza Forecasting
+                            Disease Forecasting
                         </Text>{' '}
                     </Heading>
                     <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
-                        Uses Long Short-Term Memory (LSTM) neural network data science techniques to predict future influenza vectors.
+                        In collaboration with Cepheid, Inc., this project employs Long Short-Term Memory (LSTM) neural network data science techniques to predict future influenza vectors. The eVision (Epidemic Vision) machine learning tool currently predicts the trend of influenza cases throughout the flu season with an accuracy of 90.38%, 91.43%, and 81.74% for 3, 7, and 14 weeks in advance predictions respectively.
                     </Text>
                     <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
-                        <Button
+                        //! Re enable after tool is active.
+                        {/* <Button
                             rounded={'full'}
                             bg={'blue.400'}
                             color={'white'}
@@ -51,8 +52,7 @@ export const HeroSection: FunctionComponent<HeroSectionProps> = () => {
                                 bg: 'blue.500',
                             }}>
                             See Project
-                        </Button>
-                        <Button rounded={'full'}>How It Works</Button>
+                        </Button> */}
                     </Stack>
                 </Stack>
             </Flex >
