@@ -21,6 +21,7 @@ import Andres from '../ASSETS/andres-calle.jpg';
 import Michael from '../assets/michael-castillo.png';
 import Navid from '../assets/Navid-Shaghaghi.jpg'
 import Husain from '../assets/Husain.jpeg'
+import Sreeja from '../assets/Sreeja_Photo.jpg'
 const testimonials = [
     {
         name: 'Navid Shaghaghi',
@@ -61,6 +62,14 @@ const testimonials = [
             'Michael Castillo grew up in South Florida and moved to Los Angeles at the beginning of his high school education at Granada Hills Charter. On his academic journey there, he would gain an AP Scholar with Distinction and a National AP Scholar award, as well as the AP Capstone Diploma for research on links between enjoyment of horror movies and emotional intelligence. Among other things, Michael hopes to advance his understanding and involvement in various facets of the CS field while at SCU, and looks forwards to where the path of research leads.',
         avatar:
             Michael
+    },
+    {
+        name: 'Sreeja Malladi',
+        role: 'MS Computer Engineering',
+        content:
+            'Hi, I am Sreeja. I am a grad student from the Computer Science department. I did my Bachelors in Computer Science and Engineering from India and I have 3 years of experience in Software Development. I am good at C, Python, Java and SQL. My hobbies in my free time are reading books and painting.',
+        avatar:
+            Sreeja
     },
     {
         name: 'Husain Unwalla',

@@ -49,6 +49,8 @@ export const Publications: FunctionComponent = () => {
 
     const [width, setWidth] = useState<number>(window.innerWidth);
 
+    var publicationWidth = 'full';
+
     function handleWindowSizeChange() {
         setWidth(window.innerWidth);
     }
@@ -62,6 +64,7 @@ export const Publications: FunctionComponent = () => {
     //Slides per row for mobile
     if (width < 1300) {
         settings.slidesPerRow = 1;
+        publicationWidth = 'sm';
     }
 
     // This list contains all the data for carousels
@@ -186,24 +189,13 @@ export const Publications: FunctionComponent = () => {
                                 transform="translate(0, -50%)"
                                 align={'center'}>
                                 <Box
-                                    w="lg"
+                                    //widt full if not on mobile
+                                    w={publicationWidth}
                                     rounded={'sm'}
                                     my={5}
                                     mx={[0, 5]}
                                     overflow={'hidden'}
                                     bg="white">
-                                    {/* <Box h={'200px'} >
-                                        <Img
-                                            src={
-                                                card.image
-                                            }
-                                            roundedTop={'sm'}
-                                            objectFit="cover"
-                                            h="full"
-                                            w="full"
-                                            alt={'Image'}
-                                        />
-                                    </Box> */}
                                     <Box p={4}>
                                         <Box
                                             bg="blue.500"

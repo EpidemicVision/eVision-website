@@ -21,6 +21,8 @@ import {
     useDisclosure,
 } from '@chakra-ui/react'
 
+import eVisionLogo from '../assets/eVision-Logo.png'
+
 const navLinks = [
     { name: 'Home', link: '/' },
     // { name: 'Features', link: '#features' },
@@ -60,13 +62,11 @@ const DesktopSidebarContents = ({ name }: any) => {
                     })}
                 </Stack>
                 <Spacer />
-                {/* <LinkBox>
-                    <LinkOverlay href={`https://www.scu.edu/`} isExternal>
-                        <Image
-                            boxSize={["40px", "50px"]}
-                            src=""></Image>
-                    </LinkOverlay>
-                </LinkBox> */}
+                <LinkBox>
+                    <Image
+                        boxSize={["40px", "50px"]}
+                        src={eVisionLogo}></Image>
+                </LinkBox>
             </Stack>
         </Container >
     )
