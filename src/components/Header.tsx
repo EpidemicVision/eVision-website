@@ -25,6 +25,7 @@ import eVisionLogo from '../assets/eVision-Logo.png'
 
 const navLinks = [
     { name: 'Home', link: '/' },
+    { name: 'Tool', link: '#tool' },
     // { name: 'Features', link: '#features' },
     { name: 'Papers', link: '#publications' },
     { name: 'Team', link: '#teammembers' },

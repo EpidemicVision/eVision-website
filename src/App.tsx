@@ -5,6 +5,7 @@ import { Layout } from "./components/Layout";
 import { TeamMembers } from "./components/TeamMemebrs";
 import { Footer } from "./components/Footer";
 import { Publications } from "./components/Publications";
+import { Tool } from "./components/tool";
 
 export const App = () => {
   return (
@@ -12,6 +13,8 @@ export const App = () => {
       <Box bg="gray.50">
         <HeroSection />
       </Box>
+
+      <Tool />
 
       {/* <Box id="features">
         <Features />
