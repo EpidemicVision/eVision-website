@@ -22,6 +22,7 @@ import Michael from '../assets/michael-castillo.png';
 import Navid from '../assets/Navid-Shaghaghi.jpg'
 import Husain from '../assets/Husain.jpeg'
 import Sreeja from '../assets/Sreeja_Photo.jpg'
+import Divya from '../assets/divya.jpg'
 const testimonials = [
     {
         name: 'Navid Shaghaghi',
@@ -59,7 +60,7 @@ const testimonials = [
         name: 'Michael Castillo.',
         role: 'BS Computer Science and Engineering',
         content:
-            'Michael Castillo grew up in South Florida and moved to Los Angeles at the beginning of his high school education at Granada Hills Charter. On his academic journey there, he would gain an AP Scholar with Distinction and a National AP Scholar award, as well as the AP Capstone Diploma for research on links between enjoyment of horror movies and emotional intelligence. Among other things, Michael hopes to advance his understanding and involvement in various facets of the CS field while at SCU, and looks forwards to where the path of research leads.',
+            'Michael is a third year student, with experience in data processing, statistics, and Machine Learning (ML). He has been with the Team since Freshman year, expanding his role as he learned skills in real time. His main motivation is to explore the applications of ML in forecasting, and to indirectly save lives with his work on this project.',
         avatar:
             Michael
     },
@@ -70,6 +71,14 @@ const testimonials = [
             'Hi, I am Sreeja. I am a grad student from the Computer Science department. I did my Bachelors in Computer Science and Engineering from India and I have 3 years of experience in Software Development. I am good at C, Python, Java and SQL. My hobbies in my free time are reading books and painting.',
         avatar:
             Sreeja
+    },
+    {
+        name: 'Divya Syal',
+        role: 'BS Computer Science and Engineering',
+        content:
+            'I\’m a junior Computer Science and Engineering major from Seattle, WA minoring in Innovation, Design, and Entrepreneurship.  My passions include the intersection of healthcare and technology, and this experience has given me a lot of tangible exposure to the field while fostering my Python, ML, and many other skills.  In my free time, I enjoy playing tennis, dancing, and drawing. I\’m excited to see where this project takes us!',
+        avatar:
+            Divya
     },
     {
         name: 'Husain Unwalla',

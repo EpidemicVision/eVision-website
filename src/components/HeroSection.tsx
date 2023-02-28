@@ -9,6 +9,7 @@ import {
     Highlight
 } from '@chakra-ui/react';
 import { FunctionComponent } from "react";
+import { BsArrowUpRight } from 'react-icons/bs';
 
 interface HeroSectionProps { }
 
@@ -43,18 +44,21 @@ export const HeroSection: FunctionComponent<HeroSectionProps> = () => {
                         In collaboration with Cepheid, Inc., this project employs Long Short-Term Memory (LSTM) neural network data science techniques to predict future influenza vectors. The eVision (Epidemic Vision) machine learning tool currently predicts the trend of influenza cases throughout the flu season with an accuracy of 90.38%, 91.43%, and 81.74% for 3, 7, and 14 weeks in advance predictions respectively.
                     </Text>
                     <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
-                        //! Re enable after tool is active.
-                        {/* <Button
+                        <Button
                             rounded={'full'}
+                            leftIcon={<BsArrowUpRight />}
                             bg={'blue.400'}
                             color={'white'}
                             _hover={{
                                 bg: 'blue.500',
-                            }}>
-                            See Project
-                        </Button> */}
+                            }}
+                            onClick={() => {
+                                window.location.href = "http://20.121.209.136:5008";
+                            }} >
+                            eVision Tool
+                        </Button>
                     </Stack>
-                </Stack>
+                </Stack >
             </Flex >
             <Flex flex={1}>
                 <Image

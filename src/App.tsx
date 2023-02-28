@@ -14,7 +14,7 @@ export const App = () => {
         <HeroSection />
       </Box>
 
-      <Tool />
+      {/* <Tool /> */}
 
       {/* <Box id="features">
         <Features />
