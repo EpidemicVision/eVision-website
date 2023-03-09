@@ -23,6 +23,7 @@ import Navid from '../assets/Navid-Shaghaghi.jpg'
 import Husain from '../assets/Husain.jpeg'
 import Sreeja from '../assets/Sreeja_Photo.jpg'
 import Divya from '../assets/divya.jpg'
+import kaushil from '../assets/kaushil.jpg'
 const testimonials = [
     {
         name: 'Navid Shaghaghi',
@@ -79,6 +80,14 @@ const testimonials = [
             'I\’m a junior Computer Science and Engineering major from Seattle, WA minoring in Innovation, Design, and Entrepreneurship.  My passions include the intersection of healthcare and technology, and this experience has given me a lot of tangible exposure to the field while fostering my Python, ML, and many other skills.  In my free time, I enjoy playing tennis, dancing, and drawing. I\’m excited to see where this project takes us!',
         avatar:
             Divya
+    },
+    {
+        name: 'Kaushil Kundalia',
+        role: 'MS in Computer Science',
+        content:
+            'I am a grad CS student. I love to build backend applications and I mostly look after the engineering side of things.',
+        avatar:
+            kaushil
     },
     {
         name: 'Husain Unwalla',
