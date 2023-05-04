@@ -14,6 +14,7 @@ import {
     Link,
     Center,
     chakra,
+    SimpleGrid,
 } from '@chakra-ui/react';
 // Here we have used react-icons package for the icons
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
@@ -38,34 +39,35 @@ var settings = {
 
 
 export const Publications: FunctionComponent = () => {
-    // As we have used custom buttons, we need a reference variable to
-    // change the state
-    const [slider, setSlider] = React.useState<Slider | null>(null);
+    //Used for slider buttons
+    // // As we have used custom buttons, we need a reference variable to
+    // // change the state
+    // const [slider, setSlider] = React.useState<Slider | null>(null);
 
-    // These are the breakpoints which changes the position of the
-    // buttons as the screen size changes
-    const top = useBreakpointValue({ base: '90%', md: '50%' });
-    const side = useBreakpointValue({ base: '30%', md: '40px' });
+    // // These are the breakpoints which changes the position of the
+    // // buttons as the screen size changes
+    // const top = useBreakpointValue({ base: '90%', md: '50%' });
+    // const side = useBreakpointValue({ base: '30%', md: '40px' });
 
-    const [width, setWidth] = useState<number>(window.innerWidth);
+    // const [width, setWidth] = useState<number>(window.innerWidth);
 
-    var publicationWidth = 'full';
+    // var publicationWidth = 'full';
 
-    function handleWindowSizeChange() {
-        setWidth(window.innerWidth);
-    }
-    useEffect(() => {
-        window.addEventListener('resize', handleWindowSizeChange);
-        return () => {
-            window.removeEventListener('resize', handleWindowSizeChange);
-        }
-    }, []);
+    // function handleWindowSizeChange() {
+    //     setWidth(window.innerWidth);
+    // }
+    // useEffect(() => {
+    //     window.addEventListener('resize', handleWindowSizeChange);
+    //     return () => {
+    //         window.removeEventListener('resize', handleWindowSizeChange);
+    //     }
+    // }, []);
 
-    //Slides per row for mobile
-    if (width < 1300) {
-        settings.slidesPerRow = 1;
-        publicationWidth = 'sm';
-    }
+    // //Slides per row for mobile
+    // if (width < 1300) {
+    //     settings.slidesPerRow = 1;
+    //     publicationWidth = 'sm';
+    // }
 
     // This list contains all the data for carousels
     // This can be static or loaded from a server
@@ -122,22 +124,85 @@ export const Publications: FunctionComponent = () => {
 
     return (
         <Box
-            position={'relative'}
-            height={'600px'}
-            width={'full'}
-            overflow={'show'}
-            id="publications">
-            {/* CSS files for react-slick */}
-            <Center>
-                <chakra.h1
-                    py={5}
-                    fontSize={48}
-                    fontWeight={'bold'}
-                    color={useColorModeValue('gray.700', 'gray.50')}>
-                    Papers
-                </chakra.h1>
-            </Center>
-            <link
+            h="1000px"
+        >
+            <Heading
+                as="h1"
+                size="xl"
+                fontWeight="bold"
+                textAlign="center"
+                mb={10}
+            >
+                Publications
+            </Heading>
+            <SimpleGrid
+                columns={2}
+                spacing={10}
+                maxWidth={'100%'}
+                alignContent={'center'}
+                left={0}
+                right={0}
+            >
+                {cards.map((card, index) => (
+                    <Box
+                        w={'500px'}
+                        rounded={'sm'}
+                        overflow={'hidden'}
+                        bg="white">
+                        <Box p={4}>
+                            <Box
+                                bg="blue.500"
+                                display={'inline-block'}
+                                px={2}
+                                py={1}
+                                color="white"
+                                mb={2}>
+                                <Text fontSize={'xs'} fontWeight="medium">
+                                    Published
+                                </Text>
+                            </Box>
+                            <Heading color={'black'} fontSize={'2xl'} noOfLines={1}>
+                                {card.title}
+                            </Heading>
+                            <Heading color={'gray.600'} fontSize={'md'} noOfLines={1}>
+                                Authors: {card.authors}
+                            </Heading>
+                            <br></br>
+                            <Text color={'gray.500'} noOfLines={4}>
+                                {card.text}
+                            </Text>
+                        </Box>
+                        <Link
+                            href={card.link}>
+                            <HStack background={'gray.100'}>
+                                <Flex
+                                    p={4}
+                                    alignItems="center"
+                                    justifyContent={'space-between'}
+                                    roundedBottom={'sm'}
+                                    cursor={'pointer'}
+                                    w="full">
+                                    <Text fontSize={'md'} fontWeight={'semibold'}>
+                                        View more
+                                    </Text>
+                                    <BsArrowUpRight />
+                                </Flex>
+                                <Flex
+                                    p={4}
+                                    alignItems="center"
+                                    justifyContent={'space-between'}
+                                    roundedBottom={'sm'}
+                                    borderLeft={'1px'}
+                                    cursor="pointer">
+                                </Flex>
+                            </HStack>
+                        </Link>
+                    </Box>
+                ))}
+            </SimpleGrid>
+        </Box >
+    );
+    {/* <link
                 rel="stylesheet"
                 type="text/css"
                 charSet="UTF-8"
@@ -148,7 +213,6 @@ export const Publications: FunctionComponent = () => {
                 type="text/css"
                 href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
             />
-            {/* Left Icon */}
             <IconButton
                 aria-label="left-arrow"
                 variant="ghost"
@@ -160,7 +224,6 @@ export const Publications: FunctionComponent = () => {
                 onClick={() => slider?.slickPrev()}>
                 <BiLeftArrowAlt size="40px" />
             </IconButton>
-            {/* Right Icon */}
             <IconButton
                 aria-label="right-arrow"
                 variant="ghost"
@@ -172,7 +235,6 @@ export const Publications: FunctionComponent = () => {
                 onClick={() => slider?.slickNext()}>
                 <BiRightArrowAlt size="40px" />
             </IconButton>
-            {/* Slider */}
             <Slider {...settings} ref={(slider) => setSlider(slider)}>
                 {cards.map((card, index) => (
                     <Box
@@ -189,7 +251,6 @@ export const Publications: FunctionComponent = () => {
                                 transform="translate(0, -50%)"
                                 align={'center'}>
                                 <Box
-                                    //widt full if not on mobile
                                     w={publicationWidth}
                                     rounded={'sm'}
                                     my={5}
@@ -250,7 +311,5 @@ export const Publications: FunctionComponent = () => {
                     </Box>
                 ))
                 }
-            </Slider >
-        </Box >
-    );
+            </Slider > */}
 }

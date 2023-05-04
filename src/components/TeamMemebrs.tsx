@@ -42,14 +42,6 @@ const testimonials = [
             George
     },
     {
-        name: '	Nancy Ma',
-        role: 'BS Mathematics and Computer Science',
-        content:
-            'I\'m an undergraduate student at Santa Clara University. I\'m double majoring in Computer Science and Mathematics, and I\'m currently working on eVision project.',
-        avatar:
-            Nancy
-    },
-    {
         name: 'Andres Calle',
         role: 'MS Computer Science and Engineering',
         content:
@@ -99,7 +91,7 @@ const testimonials = [
     },
 ];
 
-const pastMembers = ['Meghan McGinnis (B.A. 2019 - M.S. 2020)', 'Yuhang Qian (B.A. 2019)', 'Anika Shahi (B.A. 2020)', 'Liying Liang (B.S. 2021)', 'Tanmay Wagh (M.S. 2021)', 'Ron Huang', 'Yash Kamdar (M.S. 2021)', 'Yoga Ramachandran', 'Bhupinder Jagwani', 'Namratha Kamath', 'Supriya Karishetti (M.S. 2021)', 'Jaidev Mirchandani (M.S. 2022)'];
+const pastMembers = ['Meghan McGinnis (B.A. 2019 - M.S. 2020)', 'Yuhang Qian (B.A. 2019)', 'Anika Shahi (B.A. 2020)', 'Liying Liang (B.S. 2021)', 'Tanmay Wagh (M.S. 2021)', 'Ron Huang', 'Yash Kamdar (M.S. 2021)', 'Yoga Ramachandran', 'Bhupinder Jagwani', 'Namratha Kamath', 'Supriya Karishetti (M.S. 2021)', 'Jaidev Mirchandani (M.S. 2022)', 'Nancy Ma (BS 2023)'];
 
 const backgrounds = [
     `url("data:image/svg+xml, %3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'560\' height=\'185\' viewBox=\'0 0 560 185\' fill=\'none\'%3E%3Cellipse cx=\'102.633\' cy=\'61.0737\' rx=\'102.633\' ry=\'61.0737\' fill=\'%23ED64A6\' /%3E%3Cellipse cx=\'399.573\' cy=\'123.926\' rx=\'102.633\' ry=\'61.0737\' fill=\'%23F56565\' /%3E%3Cellipse cx=\'366.192\' cy=\'73.2292\' rx=\'193.808\' ry=\'73.2292\' fill=\'%2338B2AC\' /%3E%3Cellipse cx=\'222.705\' cy=\'110.585\' rx=\'193.808\' ry=\'73.2292\' fill=\'%23ED8936\' /%3E%3C/svg%3E")`,
