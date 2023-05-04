@@ -1,0 +1,25 @@
+# Vite cache
+.cache/
+dist/
+
+# IDE files
+.vscode/
+.idea/
+
+# NPM packages
+node_modules/
+
+# Build artifacts
+build/
+out/
+*.log
+
+# TypeScript files
+*.tsbuildinfo
+
+# macOS files
+.DS_Store
+
+# Yarn files
+yarn-error.log
+yarn.lock
