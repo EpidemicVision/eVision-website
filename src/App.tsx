@@ -11,7 +11,7 @@ export const App = () => {
       <Box bg="gray.50" id="hero">
         <HeroSection />
       </Box>
-      <Divider orientation='horizontal' borderColor="black" borderStyle="solid" />
+      <Divider orientation='horizontal' borderColor={'gray.400'} borderStyle="solid" />
 
       {/* <Tool /> */}
 
@@ -20,12 +20,12 @@ export const App = () => {
       </Box> */}
 
       <Publications />
-      <Divider orientation='horizontal' borderColor="black" borderStyle="solid" />
+      <Divider orientation='horizontal' borderColor={'gray.400'} borderStyle="solid" />
 
       <Box id='teammembers'>
         <TeamMembers />
       </Box>
-      <Divider orientation='horizontal' borderColor="black" borderStyle="solid" />
+      <Divider orientation='horizontal' borderColor={'gray.400'} borderStyle="solid" />
 
       <Footer />
     </Layout >
