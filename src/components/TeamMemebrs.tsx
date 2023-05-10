@@ -24,6 +24,15 @@ import Husain from '../assets/Husain.jpeg'
 import Sreeja from '../assets/Sreeja_Photo.jpg'
 import Divya from '../assets/divya.jpg'
 import kaushil from '../assets/kaushil.jpg'
+import Meghan from '../assets/meghan.png'
+import Anika from '../assets/anika.png'
+import Liying from '../assets/liying.png'
+import Tanmay from '../assets/tanmay.png'
+import Ron from '../assets/ron.png'
+import Yash from '../assets/yash.png'
+import Namratha from '../assets/namratha.png'
+import Supriya from '../assets/supriya.png'
+import Jaidev from '../assets/jaidev.png'
 
 const testimonials = [
     {
@@ -80,7 +89,7 @@ const pastMembers = [
     {
         name: 'Meghan McGinnis',
         role: 'B.A. 2019 - M.S. 2020',
-        avatar: ''
+        avatar: Meghan
     },
     {
         name: 'Yuhang Qian',
@@ -90,27 +99,27 @@ const pastMembers = [
     {
         name: 'Anika Shahi',
         role: 'B.A. 2020',
-        avatar: ''
+        avatar: Anika
     },
     {
         name: 'Liying Liang',
         role: 'B.S. 2021',
-        avatar: ''
+        avatar: Liying
     },
     {
         name: 'Tanmay Wagh',
         role: 'M.S. 2021',
-        avatar: ''
+        avatar: Tanmay
     },
     {
         name: 'Ron Huang',
         role: 'B.S. 2021',
-        avatar: ''
+        avatar: Ron
     },
     {
         name: 'Yash Kamdar',
         role: 'M.S. 2021',
-        avatar: ''
+        avatar: Yash
     },
     {
         name: 'Yoga Ramachandran',
@@ -125,17 +134,17 @@ const pastMembers = [
     {
         name: 'Namratha Kamath',
         role: 'B.S. 2021',
-        avatar: ''
+        avatar: Namratha
     },
     {
         name: 'Supriya Karishetti',
         role: 'M.S. 2021',
-        avatar: ''
+        avatar: Supriya
     },
     {
         name: 'Jaidev Mirchandani',
         role: 'M.S. 2022',
-        avatar: ''
+        avatar: Jaidev
     },
     {
         name: 'Nancy Ma',
