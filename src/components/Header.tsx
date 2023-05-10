@@ -124,7 +124,7 @@ interface HeaderProps {
 
 export const Header = ({ name }: HeaderProps) => {
     return (
-        <Box w="full" position="fixed" zIndex={9999} backdropFilter='auto' backdropBlur="25px" >
+        <Box w="full" position="fixed" zIndex={99} backdropFilter='auto' backdropBlur="25px" >
             <Sidebar name={name} />
         </Box>
     )
