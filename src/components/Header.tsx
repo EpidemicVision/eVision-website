@@ -15,7 +15,6 @@ import {
     Image,
     Link,
     LinkBox,
-    LinkOverlay,
     Spacer,
     Stack,
     useDisclosure,
