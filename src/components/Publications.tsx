@@ -8,7 +8,7 @@ import {
     SimpleGrid,
 } from '@chakra-ui/react';
 import { FunctionComponent } from 'react';
-import { BsArrowUpRight, BsHeartFill, BsHeart } from 'react-icons/bs';
+import { BsArrowUpRight } from 'react-icons/bs';
 
 
 export const Publications: FunctionComponent = () => {

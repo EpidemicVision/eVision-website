@@ -2,17 +2,9 @@ import {
     Avatar,
     Box,
     chakra,
-    Container,
     Flex,
-    Icon,
     SimpleGrid,
     useColorModeValue,
-    List,
-    ListItem,
-    ListIcon,
-    OrderedList,
-    UnorderedList,
-    Center,
     Text
 } from '@chakra-ui/react';
 import { FunctionComponent } from "react";

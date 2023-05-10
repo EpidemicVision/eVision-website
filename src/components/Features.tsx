@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-import { Box, SimpleGrid, Icon, Text, Stack, Flex, Heading, Container, useColorModeValue, chakra, Center } from '@chakra-ui/react';
+import { Box, SimpleGrid, Icon, Text, Stack, Flex, Container, useColorModeValue, chakra, Center } from '@chakra-ui/react';
 import { FcCommandLine, FcBullish, FcElectronics } from 'react-icons/fc';
 import { FunctionComponent } from "react";
 interface FeatureProps {

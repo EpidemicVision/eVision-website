@@ -6,7 +6,6 @@ import {
     Stack,
     Text,
     useBreakpointValue,
-    Highlight
 } from '@chakra-ui/react';
 import { FunctionComponent } from "react";
 import { BsArrowUpRight } from 'react-icons/bs';
