@@ -13,6 +13,7 @@ import {
     OrderedList,
     UnorderedList,
     Center,
+    Text
 } from '@chakra-ui/react';
 import { FunctionComponent } from "react";
 import George from '../assets/george-kouretas.jpeg';
@@ -88,7 +89,7 @@ const testimonials = [
 const pastMembers = [
     {
         name: 'Meghan McGinnis',
-        role: 'B.A. 2019 - M.S. 2020',
+        role: 'M.S. 2020',
         avatar: Meghan
     },
     {
@@ -274,9 +275,9 @@ function AdvisorCard(props: AdvisorCardProps) {
             boxShadow={'lg'}
             maxW={'640px'}
             direction={{ base: 'column-reverse', md: 'row' }}
-            width={'500px'}
+            width={'300px'}
             rounded={'xl'}
-            p={10}
+            p={4}
             justifyContent={'space-between'}
             position={'relative'}
             align={'center'}
@@ -307,15 +308,13 @@ function AdvisorCard(props: AdvisorCardProps) {
         //     backgroundImage: backgrounds[index % 4],
         // }}
         >
-            <chakra.p fontWeight={'bold'} fontSize={14}>
-                {name}
-                <chakra.span
-                    fontFamily={'Inter'}
-                    fontWeight={'medium'}
-                    color={'gray.500'}>
-                    {' '}
-                    - {role}
-                </chakra.span>
+            <chakra.p fontWeight={'bold'} fontSize={12} textAlign="left">
+                <Text>
+                    {name}
+                </Text>
+                <Text as={'span'} fontWeight={'normal'}>
+                    {role}
+                </Text>
             </chakra.p>
             <Avatar
                 src={avatar}
@@ -385,7 +384,7 @@ export const TeamMembers: FunctionComponent = () => {
                 </chakra.h1>
             </Box>
             <SimpleGrid
-                columns={{ base: 1, xl: 2 }}
+                columns={{ base: 1, xl: 3 }}
                 spacing={'20'}
                 mt={16}
                 mx={'auto'}
@@ -395,7 +394,6 @@ export const TeamMembers: FunctionComponent = () => {
                     <AdvisorCard {...cardInfo} />
                 ))}
             </SimpleGrid>
-
         </Flex>
     );
 }

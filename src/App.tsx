@@ -1,4 +1,4 @@
-import { Box, Container } from "@chakra-ui/react";
+import { Box, Container, Divider } from "@chakra-ui/react";
 import { HeroSection } from "./components/HeroSection";
 import { Features } from "./components/Features";
 import { Layout } from "./components/Layout";
@@ -13,6 +13,7 @@ export const App = () => {
       <Box bg="gray.50" id="hero">
         <HeroSection />
       </Box>
+      <Divider orientation='horizontal' borderColor="black" borderStyle="solid" />
 
       {/* <Tool /> */}
 
@@ -21,10 +22,12 @@ export const App = () => {
       </Box> */}
 
       <Publications />
+      <Divider orientation='horizontal' borderColor="black" borderStyle="solid" />
 
       <Box id='teammembers'>
         <TeamMembers />
       </Box>
+      <Divider orientation='horizontal' borderColor="black" borderStyle="solid" />
 
       <Footer />
     </Layout >
