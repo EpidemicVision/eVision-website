@@ -71,7 +71,8 @@ export const Publications: FunctionComponent = () => {
 
     return (
         <Box
-            h="1000px"
+            h="fit-content"
+            id="publications"
         >
             <Heading
                 as="h1"
@@ -83,7 +84,7 @@ export const Publications: FunctionComponent = () => {
                 Publications
             </Heading>
             <SimpleGrid
-                columns={2}
+                columns={{ base: 1, md: 2 }}
                 spacing={10}
                 maxWidth={'100%'}
                 alignContent={'center'}

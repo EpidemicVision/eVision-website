@@ -10,7 +10,7 @@ import { Tool } from "./components/Tool";
 export const App = () => {
   return (
     <Layout>
-      <Box bg="gray.50">
+      <Box bg="gray.50" id="hero">
         <HeroSection />
       </Box>
 
