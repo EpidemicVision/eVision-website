@@ -86,7 +86,7 @@ const MobileSidebar = ({ name }: any) => {
                 />
                 <Drawer isOpen={isOpen} placement="right" onClose={onClose} size="xs">
                     <DrawerOverlay />
-                    <DrawerContent bg="gray.50">
+                    <DrawerContent >
                         <DrawerCloseButton />
                         <DrawerHeader>{name}</DrawerHeader>
 
@@ -111,7 +111,7 @@ const Sidebar = ({ name }: SidebarProps) => {
                 <MobileSidebar name={name} />
             </Box>
 
-            <Box display={{ base: 'none', md: 'flex' }} bg="gray.50">
+            <Box display={{ base: 'none', md: 'flex' }} >
                 <DesktopSidebarContents name={name} />
             </Box>
         </chakra.header>
@@ -124,7 +124,7 @@ interface HeaderProps {
 
 export const Header = ({ name }: HeaderProps) => {
     return (
-        <Box w="full">
+        <Box w="full" position="fixed" zIndex={9999} backdropFilter='auto' backdropBlur="25px" >
             <Sidebar name={name} />
         </Box>
     )
