@@ -26,6 +26,7 @@ import Yash from '../assets/yash.png'
 import Namratha from '../assets/namratha.png'
 import Supriya from '../assets/supriya.png'
 import Jaidev from '../assets/jaidev.png'
+import Juan from '../assets/juan.png'
 
 const testimonials = [
     {
@@ -35,6 +36,15 @@ const testimonials = [
             'Navid Shaghaghi is a lecturer and researcher in the department of Mathematics and Computer Science (MCS) of the College of Arts and Sciences and the departments of Computer Science & Engineering (CSEN) and Bioenginneering (BIOE) of the School of Engineering. He also teaches a couple of courses in the department of Information Systems and Analytics (ISA) of the School of Business at Santa Clara University. ',
         avatar:
             Navid
+    },
+    {
+        name: 'Juan Zuluaga',
+        role: 'MS Computer Science and Engineering',
+        content:
+            'Juan is currently pursuing a M.S. in Computer Engineering, and serves as a graduate student researcher. He contributes to and helps manage projects involving the application of artificial intelligence and machine learning on a variety of healthcare-related topics including epidemics forecasting.',
+        avatar:
+            Juan
+
     },
     {
         name: 'Michael Castillo.',
@@ -376,8 +386,8 @@ export const TeamMembers: FunctionComponent = () => {
                 </chakra.h1>
             </Box>
             <SimpleGrid
-                columns={{ base: 1, xl: 3 }}
-                spacing={'20'}
+                columns={{ base: 1, md: 2, lg: 3, xl: 4 }}
+                spacing={'10'}
                 mt={16}
                 mx={'auto'}
                 zIndex={1}
