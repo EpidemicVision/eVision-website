@@ -52,7 +52,7 @@ export const HeroSection: FunctionComponent<HeroSectionProps> = () => {
                                 bg: 'blue.500',
                             }}
                             onClick={() => {
-                                window.location.href = "http://20.121.209.136:5008";
+                                window.location.href = "http://67.223.117.120:8502/";
                             }} >
                             eVision Tool
                         </Button>
