@@ -67,6 +67,24 @@ export const Publications: FunctionComponent = () => {
             authors: 'Navid Shaghaghi, Supriya Karishetti, Nancy Ma',
             year: '2021',
         },
+        {
+            title: 'Attempts at Enhancing eVision’s Influenza Forecasting Using Social Media',
+            text:
+                'Prediction of the spread of infectious diseases such as the seasonal Influenza is of utmost importance in the preparation for and mitigation of the severity of their impact. eVision (short for Epidemic Vision) is a machine learning time series forecaster under research and development by Santa Clara University’s EPIC (Ethical, Pragmatic, and Intelligent Computing) and BioInnovation & Design laboratories.',
+            link:
+                'https://ieeexplore.ieee.org/abstract/document/10012095',
+            authors: 'Navid Shaghaghi, Yash Kamdar, Ron Huang, Andres Calle, Jaidev Mirchandani, Michael Castillo',
+            year: '2022',
+        },
+        {
+            title: 'eVision: Forecasting the spread of Tuberculosis in India with Deep Learning',
+            text:
+                'Humanity has battled tuberculosis for all of recorded history. Some studies estimate that Mycobacterium tuberculosis may have been around as long as 3 million years but it was only in 1834 when Johann Schonlein officially presented the characteristics of it. Even though the TB epidemic has touched all corners of the world, Africa and Asia are the regions that currently suffer the worst consequences.',
+            link:
+                'https://american-cse.org/csci2022-ieee/pdfs/CSCI2022-2lPzsUSRQukMlxf8K2x89I/202800b671/202800b671.pdf',
+            authors: 'Juan Zuluaga, Michael Castillo, Divya Syal, Andres Calle, Navid Shaghaghi',
+            year: '2022',
+        }
     ];
 
     return (

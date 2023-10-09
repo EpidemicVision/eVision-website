@@ -8,6 +8,7 @@ import { Publications } from "./components/Publications";
 export const App = () => {
   return (
     <Layout>
+      <Divider orientation='horizontal' borderColor={'gray.400'} borderStyle="solid" />
       <Box bg="gray.50" id="hero">
         <HeroSection />
       </Box>
