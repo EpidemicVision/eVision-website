@@ -55,14 +55,6 @@ const testimonials = [
             Michael
     },
     {
-        name: 'Sreeja Malladi',
-        role: 'MS Computer Engineering',
-        content:
-            'Hi, I am Sreeja. I am a grad student from the Computer Science department. I did my Bachelors in Computer Science and Engineering from India and I have 3 years of experience in Software Development. I am good at C, Python, Java and SQL. My hobbies in my free time are reading books and painting.',
-        avatar:
-            Sreeja
-    },
-    {
         name: 'Divya Syal',
         role: 'BS Computer Science and Engineering',
         content:
@@ -154,6 +146,12 @@ const pastMembers = [
         role: 'B.S. 2023',
         avatar: Nancy
     },
+    {
+        name: 'Sreeja Malladi',
+        role: 'MS Computer Engineering',
+        avatar:
+            Sreeja
+    }
 ]
 
 const advisors = [
