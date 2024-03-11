@@ -38,15 +38,6 @@ const testimonials = [
             Navid
     },
     {
-        name: 'Juan Zuluaga',
-        role: 'MS Computer Science and Engineering',
-        content:
-            'Juan is currently pursuing a M.S. in Computer Engineering, and serves as a graduate student researcher. He contributes to and helps manage projects involving the application of artificial intelligence and machine learning on a variety of healthcare-related topics including epidemics forecasting.',
-        avatar:
-            Juan
-
-    },
-    {
         name: 'Michael Castillo.',
         role: 'BS Computer Science and Engineering',
         content:
@@ -151,6 +142,13 @@ const pastMembers = [
         role: 'MS Computer Engineering',
         avatar:
             Sreeja
+    },
+    {
+        name: 'Juan Zuluaga',
+        role: 'MS Computer Science and Engineering',
+        avatar:
+            Juan
+
     }
 ]
 
